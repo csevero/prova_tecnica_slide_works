@@ -1,0 +1,8 @@
+{
+   "resources": {
+      "trello": {
+         "apiUrl": "https://api.trello.com/1",
+         "idBoard": "605b6ec91e7d2002474cea7a"
+      }
+   }
+}
