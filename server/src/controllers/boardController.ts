@@ -14,8 +14,6 @@ export default {
     try {
       const fields = ['name', 'shortUrl'];
 
-      console.log(token, key);
-
       const response = await axios.get(
         `${apiUrl}/boards/${idBoard}/?fields=${fields}&key=${key}&token=${token}`
       );

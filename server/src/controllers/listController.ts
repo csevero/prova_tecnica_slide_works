@@ -18,8 +18,6 @@ export default {
         values
       );
 
-      console.log(response);
-
       return res.status(201).json(response.data);
     } catch (err) {
       BaseErrors.baseErrors(res, err);

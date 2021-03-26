@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "build": "tsc",
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "style:check": "prettier --check src/**/*.ts",
     "style:fix": "prettier --write src/**/*.ts"

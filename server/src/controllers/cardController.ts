@@ -15,8 +15,6 @@ export default {
       const { idList } = req.query;
       const values = req.body;
 
-      console.log(idList);
-
       const response = await axios.post(
         `${apiUrl}/cards?idList=${idList}&key=${key}&token=${token}`,
         values
