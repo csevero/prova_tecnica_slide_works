@@ -1,5 +1,5 @@
-import React, { ButtonHTMLAttributes } from "react";
-import "./style.css";
+import React, { ButtonHTMLAttributes } from 'react';
+import './style.css';
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   backgroundColor?: string;
@@ -11,7 +11,11 @@ const Button: React.FC<IButtonProps> = ({
   ...rest
 }) => {
   return (
-    <button className="button" style={{ background: `${backgroundColor}` }} {...rest}>
+    <button
+      className="button"
+      style={{ background: `${backgroundColor}` }}
+      {...rest}
+    >
       {children}
     </button>
   );
