@@ -28,7 +28,7 @@ export default {
     try {
       const { id } = req.params;
       const response = await axios.get(
-        `${apiUrl}/lists/${id}/?key=${key}&token=${token}&idBoard=${idBoard}`
+        `${apiUrl}/lists/${id}/?key=${key}&token=${token}`
       );
 
       return res.json(response.data);
@@ -43,7 +43,7 @@ export default {
       const values = req.body;
 
       const response = await axios.put(
-        `${apiUrl}/lists/${id}/?key=${key}&token=${token}&idBoard=${idBoard}`,
+        `${apiUrl}/lists/${id}/?key=${key}&token=${token}`,
         values
       );
 
@@ -58,10 +58,24 @@ export default {
       const { id } = req.params;
 
       const response = await axios.get(
-        `${apiUrl}/lists/${id}/cards/?key=${key}&token=${token}&idBoard=${idBoard}`
+        `${apiUrl}/lists/${id}/cards/?key=${key}&token=${token}`
       );
 
       return res.json(response.data);
+    } catch (err) {
+      BaseErrors.baseErrors(res, err);
+    }
+  },
+
+  async ArchiveList(req: Request, res: Response) {
+    try {
+      const { id } = req.params;
+
+      await axios.put(
+        `${apiUrl}/lists/${id}/?key=${key}&token=${token}&closed=true`
+      );
+
+      return res.send();
     } catch (err) {
       BaseErrors.baseErrors(res, err);
     }

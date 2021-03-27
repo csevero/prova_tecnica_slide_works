@@ -12,6 +12,7 @@ route.get('/list-by-id/:id', listController.listById);
 route.get('/list-all-cards/:id', listController.getAllCards);
 route.post('/list-create', listController.create);
 route.put('/list-update/:id', listController.update);
+route.put('/list-archive/:id', listController.ArchiveList);
 
 route.get('/card-list/:id', cardController.listById);
 route.post('/card-create', cardController.create);
