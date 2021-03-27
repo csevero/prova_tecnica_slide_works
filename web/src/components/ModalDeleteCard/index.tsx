@@ -50,13 +50,17 @@ const ModalDeleteCard: React.FC<Props> = ({
             <option value="" hidden>
               Escolha uma lista para listar os cards
             </option>
-            {lists.map((list) => {
-              return (
-                <option key={list.id} value={list.id}>
-                  {list.name}
-                </option>
-              );
-            })}
+            {lists.length > 0 ? (
+              lists.map((list) => {
+                return (
+                  <option key={list.id} value={list.id}>
+                    {list.name}
+                  </option>
+                );
+              })
+            ) : (
+              <option value="">Não há listas criadas nesse board</option>
+            )}
           </select>
         </div>
         <div className="input-block">
