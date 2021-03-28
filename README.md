@@ -1,7 +1,7 @@
 Primeiramente agradeço a equipe da Slide Works pelo desafio, foi uma boa experiência que me fez aprender diversas coisas novas, mas vamos ao que interessa! :grinning:
 
-**Acesse o projeto online pelos links**
-(web) [https://prova-tecnica-slide-works.netlify.app/](https://prova-tecnica-slide-works.netlify.app/) - Pode ser que demore um pouco para carregar os dados, pelo fato de o server estar online pelo Heroku de forma free. Aguarde alguns segundos que os dados serão carregados.
+**Acesse o projeto online pelos links**<br/>
+(web) [https://prova-tecnica-slide-works.netlify.app/](https://prova-tecnica-slide-works.netlify.app/) - Pode ser que demore um pouco para carregar os dados, pelo fato de o server estar online pelo Heroku de forma free. Aguarde alguns segundos que os dados serão carregados.<br/>
 (server) [https://prova-slide-works.herokuapp.com/](https://prova-slide-works.herokuapp.com/)
 
 ## Para conseguir rodar localmente você precisará fazer parte do Board Público
